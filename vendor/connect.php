@@ -5,3 +5,4 @@ $connect = mysqli_connect('localhost','root','root', 'test');
 if (!$connect) {
     die('Error connect DataBase');
 }
+?>

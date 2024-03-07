@@ -1,5 +1,8 @@
 <?php
-   session_start();
+   session_start()
+   if ($_SESSION['user']) {
+     header(string:'Localhost: profile.php');
+   }  
 ?>
 
 <!DOCTYPE html>

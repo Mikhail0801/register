@@ -20,7 +20,7 @@
 
    $password=md5($password);
 
- $a=mysqli_query($connect, "INSERT INTO `users` (`full_name`, `login`, `email`, `password`, `avatar`) VALUES ( $full_name, $login, $email, $password, $path)");
+  $a = mysqli_query($connect, "INSERT INTO `users` (`full_name`, `login`, `email`, `password`, `avatar`) VALUES ( $full_name, $login, $email, $password, $path)");
    var_dump($a);
    $_SESSION['message'] = 'Регистрация прошла успешно!';
    header('Location: ../index.php');
